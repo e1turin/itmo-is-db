@@ -1,8 +1,9 @@
-CREATE TABLE If NOT EXISTS "Biology_hierarchy"
+CREATE TABLE If NOT EXISTS "biology_hierarchy"
 (
-    "id" INTEGER CONSTRAINT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-    "characteristics" jsonb NOT NULL,
+    "id" integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    "name" character varying(255) NOT NUll,
+    "characteristics" jsonb
 );
 
-ALTER TABLE IF EXISTS "Biology_hierarchy"   
-    OWNED TO s335047;
+ALTER TABLE IF EXISTS "biology_hierarchy"   
+    OWNER TO s335047;
