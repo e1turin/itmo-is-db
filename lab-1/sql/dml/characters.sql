@@ -1,0 +1,1 @@
+INSERT INTO TABLE "character" ("name", "known_BE", "location") VALUES ("Элли", ... , ...);

@@ -42,8 +42,13 @@ psql -h pg -d studs
 - https://stackoverflow.com/a/55300741
 
 Как создать таблицу
+- https://stackoverflow.com/questions/26087556/how-do-i-read-the-documentation-syntax-for-postgresql-commands
 - https://www.postgresql.org/docs/16/sql-createtable.html -- синтаксис `create`
 - https://www.postgresql.org/docs/current/sql-altertable.html -- снтаксис `alter`
+
+Наполнить таблицу данными
+- https://www.postgresql.org/docs/current/sql-insert.html
+
 
 DDL/DML/DCL
 - https://info-comp.ru/what-is-ddl-dml-dcl-tcl
