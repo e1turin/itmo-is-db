@@ -3,3 +3,9 @@ VALUES (DEFAULT, 'Папоротники', '{"царство": "растения
 
 INSERT INTO "biology_hierarchy" 
 VALUES (DEFAULT, 'Хищники', '{ "класс": "хищники" }');
+
+INSERT INTO "biology_hierarchy"
+VALUES (DEFAULT, 'Ели Дугласа', '{"царство": "растения", "род": "ели"}');
+
+INSERT INTO "biology_hierarchy" 
+VALUES (DEFAULT, 'Насекомые', '{"царство": "насекомые"}');
