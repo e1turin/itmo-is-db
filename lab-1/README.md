@@ -61,7 +61,14 @@ DDL/DML/DCL
 - http://ssofta.narod.ru/bd/24.htm
 
 Запросы к таблицам
+- https://www.postgresql.org/docs/current/sql-select.html -- синтаксис `select`
 - https://habr.com/ru/articles/254425/ -- json запросы
+  - https://www.postgresql.org/docs/9.5/functions-json.html - операторы
+  - https://stackoverflow.com/questions/20236421/how-to-convert-postgres-json-to-integer -- json нужно конвертить
+- https://www.freecodecamp.org/news/advanced-sql-techniques/ -- комплексные запросы
+- https://www.postgresql.org/docs/current/queries-with.html -- использование with для комплексных запросов
+- https://www.postgresql.org/docs/current/functions-matching.html -- регулярные выражения
+- https://www.postgresql.org/docs/current/tutorial-join.html -- join-ы
 
 Различие ковычек в PostgreSQL
 - https://www.prisma.io/dataguide/postgresql/short-guides/quoting-rules
