@@ -43,12 +43,12 @@
 
 Выполнение заданий 1 таски:
 
-Нужный запрос составлен (см.  [extra-select.sql](/extra-task/sql/extra-select.sql)). Для заполнения базы данных использовался pgAdmin и запросы из [workspace.sql](../sql/dml/workspace.sql)
+Нужный запрос составлен (см.  [extra-select.sql](./sql/extra-select.sql)). Для заполнения базы данных использовался pgAdmin и запросы из [workspace.sql](../sql/dml/workspace.sql)
 
 Выполнения заданий 2 таски:
 
-1. ER-Диаграмму по Зоопарку (см. [lab-1-extra-task.drawio.png](/extra-task/res/lab-1-extra-task.drawio.png))  
-2. (см. [ddl.sql](/extra-task/sql/ddl.sql))
-3. (см. [dml.sql](/extra-task/sql/dml.sql))
+1. ER-Диаграмму по Зоопарку (см. [lab-1-extra-task.drawio.png](./res/lab-1-extra-task.drawio.png))  
+2. (см. [ddl.sql](./sql/ddl.sql))
+3. (см. [dml.sql](./sql/dml.sql))
     - так же примеры запросов, использовавшихся для заполнения таблицы в первой
     таске (см. [workspace.sql](../sql/dml/workspace.sql))

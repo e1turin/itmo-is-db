@@ -33,6 +33,7 @@ psql -h pg -d studs
 - [ ] DML
 
 - - -
+# Комментарии
 
 Что такое Даталогическая и инфологическая модель
 - https://online.visual-paradigm.com/knowledge/visual-modeling/conceptual-vs-logical-vs-physical-data-model
@@ -65,6 +66,6 @@ DDL/DML/DCL
 Различие ковычек в PostgreSQL
 - https://www.prisma.io/dataguide/postgresql/short-guides/quoting-rules
 
-Доп задание:
+## Доп задание:
 
-- (см. [extra-task/README.md](/extra-task/README.md))
+- (см. [extra-task/README.md](./extra-task/README.md))
