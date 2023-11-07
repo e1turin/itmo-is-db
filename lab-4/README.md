@@ -85,9 +85,9 @@ psql -h pg -d ucheb
 
 - [req-1_plan-1.png](../docs/req-1_plan-1.png)
 - [req-1_plan-2.png](../docs/req-1_plan-2.png)
+- [req-1_plan-3.png](../docs/req-1_plan-3.png)
 - [req-2_plan-1.png](../docs/req-2_plan-1.png)
 - [req-2_plan-2.png](../docs/req-2_plan-2.png)
-- [req-2_plan-3.png](../docs/req-2_plan-3.png)
 
 - короткий доклад про индексы: https://youtu.be/aaecM4wKdhY
 - `SELECT amname FROM pg_am;` чтобы получить доступные виды индексов
