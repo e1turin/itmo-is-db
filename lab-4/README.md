@@ -87,13 +87,15 @@ psql -h pg -d ucheb
 - [req-1_plan-2.png](../docs/req-1_plan-2.png)
 - [req-2_plan-1.png](../docs/req-2_plan-1.png)
 - [req-2_plan-2.png](../docs/req-2_plan-2.png)
+- [req-2_plan-3.png](../docs/req-2_plan-3.png)
 
 - короткий доклад про индексы: https://youtu.be/aaecM4wKdhY
-- `select amname from pg_am;` чтобы получить доступные виды индексов
+- `SELECT amname FROM pg_am;` чтобы получить доступные виды индексов
 - синтаксис создания индексов: https://www.postgresql.org/docs/current/sql-createindex.html
 
 Какие индексы использовать:
 
+- BRIN (https://postgrespro.ru/docs/postgresql/9.5/brin-intro)
 - GIN для полнотекстового поиска (https://www.postgresql.org/docs/current/textsearch-indexes.html)
 - Hash (?) или другая любая подходящая хеширующая функция
 

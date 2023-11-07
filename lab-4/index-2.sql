@@ -7,11 +7,11 @@ CREATE INDEX Н_ЛЮДИ_ФАМИЛИЯ_ИНД -- varchar =
 
 CREATE INDEX Н_ВЕДОМОСТИ_ЧЛВК_ИД_ИНД -- integer =
   ON Н_ВЕДОМОСТИ 
-  USING btree (ЧЛВК_ИД);
+  USING brin (ЧЛВК_ИД);
 
 CREATE INDEX Н_ВЕДОМОСТИ_ДАТА_ИНД -- timestamp <
   ON Н_ВЕДОМОСТИ 
-  USING btree (ДАТА); 
+  USING bring (ДАТА); 
 
 CREATE INDEX Н_СЕССИЯ_ЧЛВК_ИД_ИНД -- integer =
   ON Н_СЕССИЯ 
