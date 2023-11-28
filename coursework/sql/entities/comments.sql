@@ -1,11 +1,15 @@
 CREATE TABLE Comments (
     thread_id integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     title varchar(255),
-    content text,
+    content text NOT NULL,
     user_id integer NOT NULL,
     reactions_id integer,
     date timestamp NOT NULL,
-    hidden bool NOT NULL
+    hidden bool NOT NULL,
+    CONSTRAINT "reaction_set_id_fk" 
+    FOREIGN KEY (reactions_id)
+        REFERENCES Reaction_sets (r_set_id)
+        ON DELETE NO ACTION,
 );
 
 CREATE TABLE Replies (
