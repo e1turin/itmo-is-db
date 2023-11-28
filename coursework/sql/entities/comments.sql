@@ -5,7 +5,7 @@ CREATE TABLE Comments (
     user_id integer NOT NULL,
     reactions_id integer,
     creation_date timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    hidden bool NOT NULL DEFAULT FALSE,
+    trashed bool NOT NULL DEFAULT FALSE,
     CONSTRAINT "reaction_set_id_fk" 
     FOREIGN KEY (reactions_id)
         REFERENCES Reaction_sets (r_set_id)
