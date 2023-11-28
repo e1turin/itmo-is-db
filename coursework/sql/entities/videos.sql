@@ -16,5 +16,5 @@ CREATE TABLE Video_attachments (
         REFERENCES Videos (video_id)
         ON DELETE CASCADE,
     CONSTRAINT "video_attachments_pk"
-    PRIMARY KEY (comment_id, video_id),
+    PRIMARY KEY (comment_id, video_id)
 );

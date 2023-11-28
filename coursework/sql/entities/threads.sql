@@ -10,5 +10,5 @@ CREATE TABLE Threads (
     CONSTRAINT "init_comment_id_fk" 
     FOREIGN KEY (init_comment_id)
         REFERENCES Comments (comment_id)
-        ON DELETE RESTRICT,
+        ON DELETE RESTRICT
 );

@@ -5,5 +5,5 @@ CREATE TABLE Capcha (
     CONSTRAINT "picture_id_fk" 
     FOREIGN KEY (picture_id)
         REFERENCES Pictures (picture_id)
-        ON DELETE CASCADE,
+        ON DELETE CASCADE
 );

@@ -13,7 +13,7 @@ CREATE TABLE Comments (
     CONSTRAINT "user_id_fk" 
     FOREIGN KEY (user_id)
         REFERENCES Users (user_id)
-        ON DELETE RESTRICT,
+        ON DELETE RESTRICT
 );
 
 CREATE TABLE Replies (

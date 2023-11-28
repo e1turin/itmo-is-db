@@ -1,7 +1,7 @@
 CREATE TABLE Pictures (
     picture_id integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     name varchar(255),
-    file oid NOT NULL,
+    file oid NOT NULL
 );
 
 CREATE TABLE Picture_attachments (
@@ -16,5 +16,5 @@ CREATE TABLE Picture_attachments (
         REFERENCES Pictures (picture_id)
         ON DELETE CASCADE,
     CONSTRAINT "picture_attachments_pk"
-    PRIMARY KEY (comment_id, picture_id),
+    PRIMARY KEY (comment_id, picture_id)
 );

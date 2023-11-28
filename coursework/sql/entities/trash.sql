@@ -5,5 +5,5 @@ CREATE TABLE Trash (
     CONSTRAINT "comment_id_fk" 
     FOREIGN KEY (comment_id)
         REFERENCES Comments (comment_id)
-        ON DELETE NO ACTION,
+        ON DELETE NO ACTION
 );

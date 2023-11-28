@@ -5,7 +5,7 @@ CREATE TABLE Polls (
     CONSTRAINT "comment_id_fk" 
     FOREIGN KEY (comment_id)
         REFERENCES Comments (comment_id)
-        ON DELETE CASCADE,
+        ON DELETE CASCADE
 );
 
 CREATE TABLE Voted_users (
@@ -20,7 +20,7 @@ CREATE TABLE Voted_users (
         REFERENCES Users (user_id)
         ON DELETE CASCADE,
     CONSTRAINT "voted_users_pk"
-    PRIMARY KEY (poll_id, user_id),
+    PRIMARY KEY (poll_id, user_id)
 );
 
 CREATE TABLE Poll_answers (
@@ -31,5 +31,5 @@ CREATE TABLE Poll_answers (
     CONSTRAINT "poll_id_fk" 
     FOREIGN KEY (poll_id)
         REFERENCES Polls (poll_id)
-        ON DELETE CASCADE,
+        ON DELETE CASCADE
 );
