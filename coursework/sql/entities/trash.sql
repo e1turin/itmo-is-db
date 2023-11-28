@@ -4,6 +4,6 @@ CREATE TABLE Trash (
     reason text,
     CONSTRAINT "comment_id_fk" 
     FOREIGN KEY (comment_id)
-        REFERENCES Comments (id)
+        REFERENCES Comments (comment_id)
         ON DELETE NO ACTION,
 );

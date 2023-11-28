@@ -4,10 +4,10 @@ CREATE TABLE Threads (
     init_comment_id integer NOT NULL,
     CONSTRAINT "topic_id_fk" 
     FOREIGN KEY (topic_id)
-        REFERENCES Topics (id)
+        REFERENCES Topics (topic_id)
         ON DELETE RESTRICT,
     CONSTRAINT "init_comment_id_fk" 
     FOREIGN KEY (init_comment_id)
-        REFERENCES Comments (id)
+        REFERENCES Comments (comment_id)
         ON DELETE RESTRICT,
 );
