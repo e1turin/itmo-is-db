@@ -14,3 +14,8 @@ drop table "Polls" cascade;
 drop table "Voted_users" cascade;
 drop table "Poll_answers" cascade;
 drop table "Capcha" cascade;
+
+drop function throw_in_trash() cascade;
+
+drop trigger after_inserting_comment cascade;
+drop function create_reaction_set_for_comment();

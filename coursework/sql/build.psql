@@ -15,3 +15,11 @@
 /* constraints */
 
 \i entities/references.sql
+
+/* functions */
+
+\i functions/throw_in_trash.sql
+
+/* triggers */
+
+\i triggers/creating_comment.sql
