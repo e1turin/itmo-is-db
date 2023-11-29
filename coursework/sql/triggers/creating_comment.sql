@@ -15,6 +15,6 @@ $$
     END;
 $$ LANGUAGE PLPGSQL;
 
-CREATE TRIGGER
+CREATE TRIGGER after_inserting_comment
     AFTER INSERT ON Comments
     FOR EACH ROW EXECUTE PROCEDURE create_reaction_set_for_comment();
