@@ -1,3 +1,4 @@
+/* add_role before */
 with rs as (
 	insert into "Reaction_sets" (reactions)
 	values (DEFAULT)
