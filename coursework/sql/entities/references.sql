@@ -26,8 +26,8 @@ ALTER TABLE "Replies"
 
 ALTER TABLE "Replies"
   ADD FOREIGN KEY (repply_comment_id)
-      REFERENCES "Comments" (comment_id)
-      ON DELETE NO ACTION;
+        REFERENCES "Comments" (comment_id)
+        ON DELETE NO ACTION;
 
 /* Threads */
 
