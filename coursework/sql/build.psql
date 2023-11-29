@@ -1,0 +1,17 @@
+/* tables */
+
+\i entities/users.sql
+\i entities/roles.sql
+\i entities/comments.sql
+\i entities/threads.sql
+\i entities/topics.sql
+\i entities/trash.sql
+\i entities/reactions.sql
+\i entities/pictures.sql
+\i entities/videos.sql
+\i entities/polls.sql
+\i entities/capcha.sql
+
+/* constraints */
+
+\i entities/references.sql
