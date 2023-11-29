@@ -30,3 +30,10 @@ from rl
 insert into "Comments" (content, user_id)
 select 'Some interesting content', u.id
 from u;
+
+insert into "Comments" (content, user_id)
+VALUES ('Privet, Misha!', 7);
+
+insert into "Comments" (content, user_id)
+VALUES ('Privet, SuperHot!', 8);
+
