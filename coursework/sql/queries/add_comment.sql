@@ -6,7 +6,7 @@ from (
     from "Users"
     where username = 'lol'
 ) as u
-returning comment_id as id
+returning comment_id as id;
 
 insert into "Comments" (thread_id, content, user_id)
 VALUES (1, 'Privet, Misha!', 7),
