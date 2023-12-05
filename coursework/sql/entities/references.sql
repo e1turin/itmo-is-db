@@ -17,6 +17,11 @@ ALTER TABLE "Comments"
         REFERENCES "Users" (user_id)
         ON DELETE RESTRICT;
 
+ALTER TABLE "Comments"
+  ADD FOREIGN KEY (thread_id)
+        REFERENCES "Threads" (thread_id)
+        ON DELETE RESTRICT;
+
 /* Replies */
 
 ALTER TABLE "Replies"

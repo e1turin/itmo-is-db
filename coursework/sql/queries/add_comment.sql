@@ -8,15 +8,9 @@ from (
 ) as u
 returning comment_id as id
 
-insert into "Comments" (content, user_id)
-VALUES ('Privet, Misha!', 7);
-
-insert into "Comments" (content, user_id)
-VALUES ('Privet, SuperHot!', 8);
-
-insert into "Comments" (content, user_id)
-VALUES ('Privet, SuperHot!', 8);
-
-INSERT INTO "Comments" (title,content,user_id)
-VALUES ('THE TOP-1 COMMENT', 'There is nothing', 6);
+insert into "Comments" (thread_id, content, user_id)
+VALUES (1, 'Privet, Misha!', 7),
+       (1, 'Privet, SuperHot!', 8),
+       (1, 'Privet, SuperHot!', 8),
+       (1, 'THE TOP-1 COMMENT', 'There is nothing', 6);
 
