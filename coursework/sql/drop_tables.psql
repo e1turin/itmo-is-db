@@ -19,4 +19,7 @@ drop function if exists throw_in_trash cascade;
 drop function if exists vote_in_poll cascade;
 
 drop trigger if exists after_inserting_comment cascade;
-drop function if exists create_reaction_set_for_comment;
+drop function if exists after_inserting_comment_reaction_set;
+
+drop trigger if exists after_inserting_comment_popularity cascade;
+drop function if exists update_popularity_in_thread;

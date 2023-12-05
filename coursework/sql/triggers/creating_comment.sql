@@ -21,6 +21,23 @@ $$
     END
 $$ LANGUAGE PLPGSQL;
 
-CREATE TRIGGER after_inserting_comment
+CREATE OR REPLACE FUNCTION update_popularity_in_thread()
+    RETURNS TRIGGER
+AS
+$$
+DECLARE
+BEGIN
+    UPDATE "Threads"
+        SET popularity = popularity + 1
+        WHERE thread_id = NEW.thread_id;
+    RETURN NEW;
+END
+$$ LANGUAGE PLPGSQL;
+
+CREATE TRIGGER after_inserting_comment_reaction_set
     AFTER INSERT ON "Comments"
     FOR EACH ROW EXECUTE PROCEDURE create_reaction_set_for_comment();
+
+CREATE TRIGGER after_inserting_comment_popularity
+    AFTER INSERT ON "Comments"
+    FOR EACH ROW EXECUTE PROCEDURE update_popularity_in_thread();
