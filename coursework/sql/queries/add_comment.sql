@@ -1,5 +1,5 @@
 /* add_role before */
-insert into "Comments" (content, user_id)
+insert into "Comments" (thread_id, content, user_id)
 select 'Lol. Some mega interesting content', u.id
 from (
     select user_id as id
@@ -12,5 +12,5 @@ insert into "Comments" (thread_id, content, user_id)
 VALUES (1, 'Privet, Misha!', 7),
        (1, 'Privet, SuperHot!', 8),
        (1, 'Privet, SuperHot!', 8),
-       (1, 'THE TOP-1 COMMENT', 'There is nothing', 6);
+       (1, 'There is nothing', 6);
 
