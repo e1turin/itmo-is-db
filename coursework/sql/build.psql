@@ -10,7 +10,7 @@
 \i entities/pictures.sql
 \i entities/videos.sql
 \i entities/polls.sql
-\i entities/capcha.sql
+\i entities/captcha.sql
 
 /* constraints */
 

@@ -13,7 +13,7 @@ drop table if not exists "Video_attachments" cascade;
 drop table if not exists "Polls" cascade;
 drop table if not exists "Voted_users" cascade;
 drop table if not exists "Poll_answers" cascade;
-drop table if not exists "Capcha" cascade;
+drop table if not exists "Captcha" cascade;
 
 drop function if not exists throw_in_trash() cascade;
 
