@@ -1,6 +1,8 @@
 insert into "Roles" (name, description)
 values 
-    ('admin', 'Administrator user'),
-    ('moderator', 'Moderator user'),
-    ('anonimous', 'Anonimous common user')
+    ('admin', 'The coolest role ever'),
+    ('moderator', 'Provides moderating comments'),
+    ('guest', 'Guest role')
+returning role_id;
+
 returning role_id;
