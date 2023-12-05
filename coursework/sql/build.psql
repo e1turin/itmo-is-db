@@ -19,6 +19,7 @@
 /* functions */
 
 \i functions/throw_in_trash.sql
+\i functions/vote_in_poll.sql
 
 /* triggers */
 
