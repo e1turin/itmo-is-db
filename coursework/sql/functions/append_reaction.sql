@@ -2,8 +2,8 @@ CREATE OR REPLACE PROCEDURE append_reaction_to_comment(reaction_text varchar, c_
 LANGUAGE PLPGSQL
 AS $$
     DECLARE
-        r_id int;
-        r_cnt int;
+        r_id Integer;
+        r_cnt Integer;
     BEGIN
         IF length(reaction_text) < 7 THEN
             SELECT reactions_id 
@@ -23,8 +23,10 @@ AS $$
             UPDATE "Reaction_sets"
             SET reactions = jsonb_set(reactions, array[reaction_text], to_jsonb(r_cnt + 1), TRUE)
             WHERE r_set_id = r_id;
+        ELSE
+            RAISE EXCEPTION 'Reaction is too long';
         END IF;
-    end;
+    END;
 $$;
 
 /* EXAMPLE
