@@ -5,10 +5,10 @@ CREATE INDEX "Users_username_index" ON "Users" USING hash(username);
 
 CREATE INDEX "Comments_deleted_index" ON "Comments" ((1)) WHERE deleted; -- for filterings
 CREATE INDEX "Comments_user_id_index" ON "Comments" USING hash(user_id); 
-CREATE INDEX "Comments_creation_date_index" ON "Comments" USING btree(creation_date);
-CREATE INDEX "Comments_thread_id_index" ON "Comments" USING btree(thread_id);
-CREATE INDEX "Comments_content_substring_index" ON "Comments" USING GIN(content);
-CREATE INDEX "Comments_title_substring_index" ON "Comments" USING GIN(title);
+CREATE INDEX "Comments_creation_date_index" ON "Comments" USING btree(creation_date); -- sort by date for paggination
+CREATE INDEX "Comments_thread_id_index" ON "Comments" USING btree(thread_id); -- get curtain thread
+CREATE INDEX "Comments_content_substring_index" ON "Comments" USING GIN(content); -- text search
+CREATE INDEX "Comments_title_substring_index" ON "Comments" USING GIN(title); -- text search
 
 CREATE INDEX "Poll_answers_poll_id_index" ON "Poll_answers" USING hash(poll_id);
 CREATE INDEX "Polls_comment_id_index" ON "Polls" USING hash(comment_id);
