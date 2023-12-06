@@ -1,0 +1,10 @@
+CREATE INDEX "Users_isu_index" ON "Users" USING hash(isu_id);
+CREATE INDEX "Users_role_index" ON "Users" USING hash(role);
+CREATE INDEX "Users_username_index" ON "Users" USING hash(username);
+CREATE INDEX "Comments_user_id_index" ON "Comments" USING hash(user_id);
+CREATE INDEX "Comments_creation_date_index" ON "Comments" USING btree(creation_date);
+CREATE INDEX "Poll_answers_poll_id_index" ON "Poll_answers" USING hash(poll_id);
+CREATE INDEX "Polls_comment_id_index" ON "Polls" USING hash(comment_id);
+CREATE INDEX "Threads_topic_id_index" ON "Threads" USING hash(topic_id);
+CREATE INDEX "Trash_comment_id_index" ON "Trash" USING hash(comment_id);
+CREATE INDEX "Trash_recycle_date_index" ON "Comments" USING btree(recycle_date);
