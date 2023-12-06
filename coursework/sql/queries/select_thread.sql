@@ -9,4 +9,5 @@ SELECT
 FROM "Comments" c
 JOIN "Users" u
   ON u.user_id = c.user_id
-WHERE thread_id = 1;
+WHERE c.thread_id = 1
+  AND c.deleted = FALSE;
