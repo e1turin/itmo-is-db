@@ -18,9 +18,12 @@
 
 /* functions */
 
+\i functions/append_reaction.sql
 \i functions/throw_in_trash.sql
 \i functions/vote_in_poll.sql
 
 /* triggers */
 
 \i triggers/creating_comment.sql
+\i triggers/deleting_comment.sql
+\i triggers/moderate.sql
