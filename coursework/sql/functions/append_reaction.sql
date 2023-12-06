@@ -16,14 +16,13 @@ AS $$
             FROM "Reaction_sets" 
             WHERE r_set_id = r_id;
 
-			if r_cnt is null then
+			IF r_cnt IS NULL THEN
                 r_cnt := 0;
-			end if;
+			END IF;
 
             UPDATE "Reaction_sets"
             SET reactions = jsonb_set(reactions, array[reaction_text], to_jsonb(r_cnt + 1), TRUE)
             WHERE r_set_id = r_id;
-
         END IF;
     end;
 $$;
