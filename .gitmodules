@@ -1,0 +1,6 @@
+[submodule "coursework/itmo-chan-client"]
+	path = coursework/itmo-chan-client
+	url = https://github.com/e1turin/itmo-chan-client.git
+[submodule "coursework/itmo-chan-server"]
+	path = coursework/itmo-chan-server
+	url = https://github.com/e1turin/itmo-chan-server.git
