@@ -30,7 +30,7 @@ ALTER TABLE "Replies"
         ON DELETE NO ACTION;
 
 ALTER TABLE "Replies"
-  ADD FOREIGN KEY (repply_comment_id)
+  ADD FOREIGN KEY (reply_comment_id)
         REFERENCES "Comments" (comment_id)
         ON DELETE NO ACTION;
 
