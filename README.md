@@ -99,6 +99,8 @@ ssh-keygen
 cat ~/.ssh/id_rsa.pub | ssh <remote_username>@helios.se.ifmo.ru 'cat >> .ssh/authorized_keys'
 ```
 
+- так же есть человеческий вариант с помощью `ssh-copy-id`, но есть нюансы
+
 ### ssh-alias
 
 И удобно настроить алиас на helios `~/.ssh/config` на локальном компьютере:
