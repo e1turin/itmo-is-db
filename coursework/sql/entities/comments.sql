@@ -12,6 +12,6 @@ CREATE TABLE "Comments" (
 
 CREATE TABLE "Replies" (
     comment_id integer NOT NULL,
-    repply_comment_id integer NOT NULL,
-    PRIMARY KEY (comment_id, repply_comment_id)
+    reply_comment_id integer NOT NULL,
+    PRIMARY KEY (comment_id, reply_comment_id)
 );
